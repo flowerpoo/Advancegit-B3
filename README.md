@@ -1,17 +1,19 @@
 # Advancegit-B3
 
-Install the NPM packages first
+## Table of Contents
 
-# npm install
+- [Installation](#installation)
+- [Usage](#usage)
 
-Then start the tailwind dev-service
+## Installation
 
-# npm run tailwind
+1. Clone the repository.
+2. Install dependencies using `npm install`.
 
-Finally, start the application:
+## Usage
 
-# python app/py
+To start the dev-service, run: `npm run tailwind`
 
-OR
+To start the flask application, run: `ptyhon app.py` OR `python3 app.py`
 
-# python3 app.py
+Then, open your web browser and go to [http://localhost:3000](http://localhost:3000).
