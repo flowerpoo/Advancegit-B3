@@ -16,4 +16,4 @@ To start the dev-service, run: `npm run tailwind`
 
 To start the flask application, run: `ptyhon app.py` OR `python3 app.py`
 
-Then, open your web browser and go to [http://localhost:5000](http://localhost:5000).
+Then, open your web browser and go to [http://localhost:3000](http://localhost:3000).
