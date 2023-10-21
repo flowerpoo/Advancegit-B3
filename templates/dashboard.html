@@ -8,14 +8,11 @@
             const taskForm = document.getElementById("task-form");
             taskForm.style.display = taskForm.style.display === "block" ? "none" : "block";
         }
+        function showTaskDetails(title, description, assigned_user_id) {
+            alert("Title: " + title + "\nDescription: " + description + "\nAssigned to: " + assigned_user_id);
+        }
     </script>
 </head>
-<script>
-    function showTaskDetails(task) {
-        alert("Title: " + task.title + "\nDescription: " + task.description + "\nAssigned to: " + task.assigned_user_id);
-        // You could also populate a modal or another HTML element with these details.
-    }
-</script>
 <body>
     <div class="container">
         <h1>Dashboard</h1>
@@ -49,7 +46,10 @@
         <hr>
         <div class="task-list">
             <h2>Your Tasks</h2>
+            {% for task in tasks %}
             <!-- Tasks will be populated here -->
+            <button onclick='showTaskDetails("{{ task.title }}", "{{ task.description }}", "{{ task.assigned_user_id }}")'>{{ task.title }}</button>
+            {% endfor %}
         </div>
     </div>
 </body>
